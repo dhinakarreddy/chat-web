@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": [],
+    "paths": {
+      "@stomp/ng2-stompjs": ["../node_modules/@stomp/ng2-stompjs"]
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+  ,
+  "include": [
+    "../node_modules/ng2-stomp-service/dist/stomp.service.ts",
+    "../src/*.ts"
+  ]
+}

@@ -1,0 +1,41 @@
+<div class="middlePage">
+  <div class="page-header">
+    <h1 class="logo">Angular
+      <small>chat</small>
+    </h1>
+  </div>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title">Please Sign In</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-4 hidden-sm hidden-xs">
+          <img src="../assets/images/chat.png" alt="Chat Logo" />
+          <!-- Image downloaded from https://pixabay.com/en/chat-multiple-icon-symbol-message-2389223/-->
+        </div>
+        <div class="col-md-8" style="border-left:1px solid #ccc;height:200px">
+          <form class="form-horizontal" (submit)="loginUser($event)">
+            <fieldset>
+              <input id="textinput1" autofocus="autofocus" name="textinput" type="text" placeholder="Enter User Name" class="form-control input-md">
+              <div class="spacing">
+                <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+                <small> Remember me</small>
+              </div>
+              <input id="textinput2" name="textinput" type="password" placeholder="Enter Password" class="form-control input-md">
+              <div class="spacing">
+                <a href="#">
+                  <small> Forgot Password?</small>
+                </a>
+                <br/>
+              </div>
+              <button type="submit" id="singlebutton" name="singlebutton" class="btn btn-info btn-sm pull-right">Sign In</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>
+    <a href="https://www.linkedin.com/in/dhinakarreddy/" target="_blank">About</a> · Dhinakar</p>
+</div>
